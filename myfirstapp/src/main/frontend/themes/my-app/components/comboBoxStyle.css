@@ -1,0 +1,24 @@
+vaadin-combo-box {
+    /* Cambiando variables Vaadin */
+    --vaadin-input-field-value-color: red;
+}
+
+/* Usando Shadow DOM */
+vaadin-combo-box-overlay.cboage::part(content) {
+    background: green;
+    color: white;
+    font-weight: bold;
+}
+
+vaadin-combo-box-overlay.cboage vaadin-combo-box-item:hover {
+    background: blue;
+    color: red;
+}
+
+vaadin-combo-box-overlay.cboage vaadin-combo-box-item::part(checkmark)::before {
+    color: red;
+}
+
+vaadin-combo-box.cboage::part(toggle-button) {
+    color: red;
+}

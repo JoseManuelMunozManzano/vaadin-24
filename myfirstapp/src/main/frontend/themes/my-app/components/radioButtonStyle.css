@@ -1,0 +1,16 @@
+/* Usando Shadow DOM */
+vaadin-radio-group.radio-employee vaadin-radio-button > [slot="label"] {
+    color: darkslategray;
+}
+
+vaadin-radio-group.radio-employee::part(label) {
+    color: darkgreen;
+}
+
+vaadin-radio-group.radio-employee > [slot="helper"] {
+     color: red;
+}
+
+vaadin-radio-group.radio-employee vaadin-radio-button[checked]::part(radio) {
+    background: orange;
+}

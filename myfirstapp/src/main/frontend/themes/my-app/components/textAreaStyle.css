@@ -1,0 +1,29 @@
+.my-custom-textarea {
+    /* Propiedades CSS */
+    /*color: yellow;*/
+}
+
+/* Usando Shadow DOM */
+vaadin-text-area {
+    color: darkslategray;
+}
+
+vaadin-text-area::part(input-field) {
+    background: beige;
+}
+
+vaadin-text-area::part(clear-button) {
+    color: red;
+}
+
+vaadin-text-area > [slot="label"] {
+    color: navy;
+}
+
+vaadin-text-area > [slot="helper"] {
+    color: blueviolet;
+}
+
+vaadin-text-area > [slot="error-message"] {
+    color: orange;
+}

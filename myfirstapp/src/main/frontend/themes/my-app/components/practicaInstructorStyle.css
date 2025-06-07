@@ -1,0 +1,184 @@
+/* HEADER */
+
+vaadin-menu-bar.header-menu vaadin-menu-bar-button {
+    background: darkslateblue;
+}
+
+vaadin-menu-bar.header-menu vaadin-menu-bar-button:hover {
+    background: steelblue;
+}
+
+vaadin-menu-bar.header-menu vaadin-menu-bar-item::part(content) {
+    color: white;
+    font-weight: bolder;
+}
+
+/* CONTENT */
+
+/* Accordion */
+vaadin-accordion.link-accordion vaadin-accordion-heading {
+    color: steelblue;
+}
+
+vaadin-accordion.link-accordion vaadin-accordion-heading::part(toggle) {
+    color: steelblue;
+}
+
+vaadin-accordion.link-accordion vaadin-accordion-heading[opened] {
+    color: seagreen;
+}
+
+vaadin-accordion.link-accordion vaadin-accordion-heading[opened]::part(toggle) {
+    color: seagreen;
+}
+
+vaadin-accordion.link-accordion vaadin-accordion-panel::part(content) {
+    border-radius: 8px;
+    padding: 6px;
+}
+
+/* Grid */
+vaadin-grid.person-grid-instructor::part(even-row){
+    --vaadin-grid-cell-background: lightgray;
+    color: darkslategray;
+}
+vaadin-grid.person-grid-instructor::part(odd-row){
+    --vaadin-grid-cell-background: white;
+    color: darkslategray;
+}
+vaadin-grid.person-grid-instructor::part(first-row){
+    --vaadin-grid-cell-background: darkgray;
+    color: darkslategray;
+}
+
+vaadin-grid.person-grid-instructor::part(last-row){
+    --vaadin-grid-cell-background: darkgray;
+    color: darkslategray;
+}
+
+vaadin-grid.person-grid-instructor::part(selected-row){
+    --vaadin-grid-cell-background: seagreen;
+    color: white;
+}
+
+vaadin-grid.person-grid-instructor::part(row):hover{
+    --vaadin-grid-cell-background: steelblue;
+    color: white;
+}
+
+/*vaadin-grid.person-grid-instructor::part(last-header-row-cell){
+    color: white;
+    --vaadin-grid-cell-background: darkslateblue;
+}*/
+
+vaadin-grid.person-grid-instructor::part(footer-cell){
+    color: darkslateblue;
+}
+
+vaadin-grid.person-grid-instructor vaadin-checkbox::part(checkbox):after{
+    background: seagreen;
+}
+
+vaadin-grid.person-grid-instructor::part(first-column-cell){
+    --vaadin-grid-cell-background: white;
+}
+
+vaadin-grid.person-grid-instructor vaadin-grid-sorter::part(indicators){
+    color: darkslateblue;
+}
+
+vaadin-grid.person-grid-instructor::part(high-salary){
+    color: darkgreen;
+}
+vaadin-grid.person-grid-instructor::part(low-salary){
+    color: red;
+}
+
+/* Form Combo Box */
+vaadin-combo-box::part(input-field){
+    background: lightgray;
+    color: navy;
+    font-weight: bolder;
+}
+
+vaadin-combo-box::part(clear-button){
+    color: red;
+}
+
+vaadin-combo-box > [slot="label"]{
+    color: darkslateblue;
+    font-weight: bolder;
+}
+
+vaadin-combo-box::part(toggle-button){
+    color: seagreen;
+}
+
+vaadin-combo-box-overlay::part(content){
+    background: lightgray;
+    color: navy;
+    font-weight: bolder;
+}
+
+vaadin-combo-box-overlay vaadin-combo-box-item:hover{
+    background: steelblue;
+    color: white;
+}
+
+vaadin-combo-box-overlay vaadin-combo-box-item::part(checkmark)::before{
+    color: seagreen;
+}
+
+/* Form Input Fields */
+vaadin-text-field::part(input-field){
+    background: lightgray;
+    color: navy;
+    font-weight: bolder;
+}
+
+vaadin-text-field::part(clear-button){
+    color: red;
+}
+
+vaadin-text-field > [slot="label"]{
+    color: darkslateblue;
+    font-weight: bolder;
+}
+
+ vaadin-email-field::part(input-field){
+    background: lightgray;
+    color: navy;
+    font-weight: bolder;
+}
+
+vaadin-email-field::part(clear-button){
+    color: red;
+}
+
+vaadin-email-field > [slot="label"]{
+    color: darkslateblue;
+    font-weight: bolder;
+}
+
+vaadin-number-field::part(input-field){
+    background: lightgray;
+    color: navy;
+    font-weight: bolder;
+}
+
+vaadin-number-field::part(clear-button){
+    color: red;
+}
+
+vaadin-number-field > [slot="label"]{
+    color: darkslateblue;
+    font-weight: bolder;
+}
+
+vaadin-number-field.number-age::part(increase-button){
+    color: green;
+}
+
+vaadin-number-field.number-age::part(decrease-button){
+    color: red;
+}

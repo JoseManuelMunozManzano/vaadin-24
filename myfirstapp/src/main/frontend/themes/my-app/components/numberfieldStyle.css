@@ -1,0 +1,29 @@
+.price {
+    /* Propiedades CSS */
+/*    background: beige;
+    color: orange;
+    border-radius: 8px;
+    padding: 2px;  */
+
+    /* Cambiando variables Vaadin */
+/*    --vaadin-input-field-focused-label-color: red;
+    --vaadin-focus-ring-color: orange;
+    --lumo-font-family: arial; */
+}
+
+/* Usando Shadow DOM */
+vaadin-number-field.price::part(increase-button) {
+    color: green;
+}
+
+vaadin-number-field.price::part(decrease-button) {
+    color: red;
+}
+
+vaadin-number-field.price > [slot="helper"] {
+    color: blue;
+}
+
+vaadin-number-field.price > [slot="error-message"] {
+    color: orange;
+}

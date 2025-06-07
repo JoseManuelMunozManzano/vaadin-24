@@ -1,0 +1,19 @@
+.primary {
+    background: hotpink;
+    color: white;
+    border-right: 8px;
+}
+
+vaadin-button[disabled].primary {
+    background: beige;
+    color: dimgray;
+}
+
+vaadin-button.primary:hover {
+    background: green;
+    color: white;
+}
+
+vaadin-button.primary::part(label) {
+    color: blueviolet;
+}

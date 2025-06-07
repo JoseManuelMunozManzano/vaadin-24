@@ -1,0 +1,39 @@
+.my-custom-textfield {
+    /* Propiedades CSS */
+    /*background: antiquewhite;
+    font-family: Algerian;
+    border-radius: 8px;
+    padding: 6px;  */
+
+    /* Cambiando variables Vaadin */
+    /*--vaadin-input-field-value-color: red;
+    --vaadin-focus-ring-color: green;
+    --vaadin-input-field-value-font-weight: 200;
+    --vaadin-input-field-invalid-background: blue;*/
+}
+
+/* Usando Shadow DOM */
+vaadin-text-field.my-custom-textfield > [slot="label"] {
+    color: blueviolet;
+    font-family: Algerian;
+}
+
+vaadin-text-field.my-custom-textfield::part(required-indicator):after {
+    color: orange;
+}
+
+vaadin-text-field.my-custom-textfield::part(input-field) {
+    background: antiquewhite;
+}
+
+vaadin-text-field.my-custom-textfield > [slot="input"], vaadin-text-field.my-custom-textfield > [slot="helper"] {
+    color: green;
+}
+
+vaadin-text-field.my-custom-textfield > [slot="error-message"] {
+    color: rosybrown;
+}
+
+vaadin-text-field.my-custom-textfield::part(clear-button) {
+    color: red;
+}

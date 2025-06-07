@@ -1,0 +1,83 @@
+/* MENU BAR */
+vaadin-menu-bar.menu-bar-practica vaadin-menu-bar-button {
+    background: blueviolet;
+    color: white;
+}
+
+vaadin-menu-bar.menu-bar-practica vaadin-menu-bar-button:hover {
+    background: blue;
+}
+
+/* ACCORDION PANEL */
+vaadin-accordion.accordion-practica vaadin-accordion-heading[opened] {
+    color: green;
+}
+
+vaadin-accordion.accordion-practica vaadin-accordion-heading:not([opened]) {
+    color: blue;
+}
+
+/* GRID */
+vaadin-grid.person-grid-practica::part(even-row){
+    --vaadin-grid-cell-background: lightgray;
+    color: darkslategray;
+}
+
+vaadin-grid.person-grid-practica::part(odd-row){
+    --vaadin-grid-cell-background: white;
+    color: darkslategray;
+}
+
+vaadin-grid.person-grid-practica::part(first-row){
+    --vaadin-grid-cell-background: darkgray;
+    color: darkslategray;
+}
+
+vaadin-grid.person-grid-practica::part(selected-row){
+    --vaadin-grid-cell-background: seagreen;
+    color: white;
+}
+
+vaadin-grid.person-grid-practica::part(row):hover{
+    --vaadin-grid-cell-background: steelblue;
+    color: white;
+}
+
+vaadin-grid.person-grid-practica::part(first-column-cell){
+    --vaadin-grid-cell-background: white;
+}
+
+vaadin-grid.person-grid-practica vaadin-checkbox::part(checkbox):after{
+    background: seagreen;
+}
+
+/* FORM */
+
+.fl-practica vaadin-form-item::part(label) {
+    color: blue;
+}
+
+.fl-practica vaadin-number-field > [slot="input"] {
+    color: blue;
+}
+
+.fl-practica vaadin-combo-box > [slot="input"] {
+    color: blue;
+}
+
+.fl-practica vaadin-number-field::part(increase-button) {
+    color: green;
+}
+
+.fl-practica vaadin-number-field::part(decrease-button) {
+    color: red;
+}
+
+vaadin-combo-box-overlay.cbo-gender-practica::part(content) {
+    color: blue;
+    background: orange;
+}
+
+vaadin-combo-box-overlay.cbo-gender-practica vaadin-combo-box-item::part(checkmark)::before {
+    color: green;
+}

@@ -1,0 +1,13 @@
+/* Usando Shadow DOM */
+
+/*vaadin-message-list vaadin-message.msg1::part(message) {
+    color: red;
+}*/
+
+vaadin-message-list vaadin-message.msg1::part(content) {
+    color: red;
+}
+
+vaadin-message-list vaadin-message.msg1::part(time) {
+    color: red;
+}

@@ -1,0 +1,37 @@
+/* Usando Shadow DOM */
+vaadin-menu-bar.my-menu vaadin-menu-bar-button {
+    background: beige;
+}
+
+vaadin-menu-bar.my-menu vaadin-menu-bar-button[disabled] {
+    background: lightgray;
+}
+
+vaadin-menu-bar.my-menu vaadin-menu-bar-item::part(content) {
+    color: darkslategray;
+}
+
+vaadin-menu-bar-overlay.my-menu-overlay::part(overlay) {
+    background: beige;
+}
+
+/*vaadin-menu-bar-overlay.my-menu-overlay vaadin-menu-bar-item {
+    background: orange;
+}*/
+
+vaadin-menu-bar-overlay.my-menu-overlay vaadin-menu-bar-item[disabled] {
+    background: lightgray;
+}
+
+vaadin-menu-bar-overlay.my-menu-overlay vaadin-menu-bar-item::part(content) {
+    color: darkslategray;
+}
+
+vaadin-menu-bar-overlay.my-menu-overlay vaadin-menu-bar-item[disabled]::part(content) {
+    color: red;
+}
+
+vaadin-menu-bar-overlay.my-menu-overlay vaadin-menu-bar-item::part(checkmark):before {
+    color: darkgreen;
+}
+
