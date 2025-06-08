@@ -50,7 +50,7 @@ Pulsar el botón `Download`.
 
 Luego descomprimir el fichero `.zip` obtenido y abrirlo en `IntelliJ Idea`.
 
-Para poder ejecutar un proyecto Vaadin hay configurar cual es la `Main Class`.
+Para poder ejecutar un proyecto Vaadin hay configurar cuál es la `Main Class`.
 
 ![alt IntelliJ Run Configuration](./images/02-IntelliJRunConfiguration.png)
 
