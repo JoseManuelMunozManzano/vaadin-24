@@ -174,3 +174,5 @@ En nuestro fichero `pom.xml` eliminaremos:
 ## [Navegación y Enrutado - Operaciones dinámicas sobre rutas](./dynamicrouteoperations/README.md)
 
 ## [Authentication and Authorization](./security/README.md)
+
+## [Vaadin & Spring AI](./vaadin-ai/README.md)
