@@ -1,0 +1,33 @@
+/* Usando Shadow DOM */
+vaadin-select.name-select::part(label) {
+    color: darkslategray;
+}
+
+vaadin-select.name-select::part(input-field) {
+    background: beige;
+}
+
+vaadin-select.name-select::part(toggle-button) {
+    color: orange;
+}
+
+vaadin-select.name-select vaadin-select-item {
+    color: blue;
+}
+
+/* Estilizamos la parte del dropdown */
+.name-select-overlay {
+    --vaadin-focus-ring-color: orange;
+}
+
+vaadin-select-overlay.name-select-overlay vaadin-select-item {
+    color: red;
+}
+
+vaadin-select-overlay.name-select-overlay::part(overlay) {
+    background: beige;
+}
+
+vaadin-select-overlay.name-select-overlay vaadin-select-item::part(checkmark):before {
+    color: orange;
+}

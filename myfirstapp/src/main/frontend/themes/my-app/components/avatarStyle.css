@@ -1,0 +1,14 @@
+/* Usando Shadow DOM */
+vaadin-avatar.user-image {
+    background: orange;
+}
+
+vaadin-avatar-group.avt-grp vaadin-avatar::part(abbr) {
+    color: white;
+    background: orange;
+}
+
+vaadin-avatar-group-overlay.avt-grp-overlay::part(content) {
+    color: white;
+    background: blueviolet;
+}

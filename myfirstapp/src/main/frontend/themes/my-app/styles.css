@@ -1,0 +1,43 @@
+@import "fontawesome/fontawesome.css";
+@import "fontawesome/solid.css";
+
+@import "components/buttonStyle.css";
+@import "components/textfieldStyle.css";
+@import "components/numberfieldStyle.css";
+@import "components/passwordfieldStyle.css";
+@import "components/verticalLayoutStyle.css";
+@import "components/horizontalLayoutStyle.css";
+@import "components/formLayoutStyle.css";
+@import "components/textAreaStyle.css";
+@import "components/checkboxStyle.css";
+@import "components/comboBoxStyle.css";
+@import "components/dialogStyle.css";
+@import "components/accordionStyle.css";
+@import "components/avatarStyle.css";
+@import "components/datePickerStyle.css";
+@import "components/iconStyle.css";
+@import "components/imageStyle.css";
+@import "components/listBoxStyle.css";
+@import "components/messageListStyle.css";
+@import "components/multiSelectComboBoxStyle.css";
+@import "components/notificationStyle.css";
+@import "components/progressBarStyle.css";
+@import "components/radioButtonStyle.css";
+@import "components/selectStyle.css";
+@import "components/uploadStyle.css";
+@import "components/menuBarStyle.css";
+@import "components/tabStyle.css";
+@import "components/gridStyle.css";
+@import "components/practicaStyle.css";
+@import "components/practicaInstructorStyle.css";
+
+/* Esto lo ponemos a mayores, pero no es necesario si nuestro diseño no lo requiere. */
+/* Pero lo indico para saber que aquí también podemos poner CSS en el body, cambiando una variable Vaadin a nivel global. */
+body {
+    background: white;
+    --vaadin-focus-ring-color: seagreen;
+}
+
+.form-layout-person {
+    padding: 10px;
+}
